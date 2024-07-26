@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Aniversário Meu Chuchu!</h1>
+        <button id="showMessageButton">Aperte aqui para ler</button>
+        <div class="message" id="message" style="display: none;">
+            <p>Parabéns minha querida irmã, quero que Deus te ilumine a cada passo da sua vida, você tem muito o que conquistar e eu acredito em você. Muito obrigado por tudo que já me fez e faz, sou grato a Deus por tudo mesmo. Todo dia eu rezo e peço para Deus te ilumine sempre, você sabe que pode contar comigo para tudo. Que hoje você possa ser mais feliz que ontem, e cada pessoa que está ao seu lado e nunca soltou a sua mão é porque se preocupa muito com você e te ama. Eu sou uma delas, feliz seu dia, meu amor!!!!</p>
+        </div>
+        <div class="images" id="images" style="display: none;">
+            <img src="img 1.jpg" alt="Imagem 1">
+            <img src="img 3.jpg" alt="Imagem 2">
+        </div>
+    </div>
+    <script>
+        document.getElementById('showMessageButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('images').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
